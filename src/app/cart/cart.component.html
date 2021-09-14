@@ -1,0 +1,13 @@
+<h3>Cart</h3>
+
+<div class="cart-item" *ngFor="let item of items; index as i"> <!--Added ; index as i to get hold of index -->
+  <span>{{ item.strMeal}}</span>
+  <div class="button">
+  <button type="button" class="btn btn-outline-primary btn-sm" (click)="removeItem(i)">Delete</button>
+</div>
+</div>
+
+
+<!-- <div class="text-center">
+<a routerLink="/recepies/:id" class="btn btn-outline-secondary mt-3">Back to All Recepi</a>
+</div> -->
